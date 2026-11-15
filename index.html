@@ -118,6 +118,14 @@ h2 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 4vw, 
 .cred div { display: flex; justify-content: space-between; gap: 16px; font-size: 15px; }
 .cred dt, .cred span:first-child { color: var(--on-navy-muted); }
 .cred span:last-child { font-weight: 700; text-align: right; }
+.card-id .photo { position: relative; height: 300px; margin: -8px -8px 4px; border-radius: 18px; overflow: hidden; background: radial-gradient(circle at 50% 62%, #E8C77A 0 118px, transparent 119px), #1E2E52; display: flex; justify-content: center; align-items: flex-end; }
+.card-id .photo img { width: 250px; height: auto; display: block; margin-bottom: -100px; }
+.career { border-top: 1px solid #34436A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px; }
+.career-label { font-size: 15px; color: var(--on-navy-muted); }
+.career ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.career li { font-size: 15px; font-weight: 700; line-height: 1.5; }
+.career .was { color: var(--gold); font-weight: 800; margin-right: 2px; }
+.career .yr { display: block; font-weight: 500; font-size: 13px; color: var(--on-navy-muted); }
 .about-text p { margin: 0 0 16px; max-width: 34em; }
 .about-text p:last-child { margin-bottom: 0; }
 .about-text strong { color: var(--ink); }
@@ -214,6 +222,9 @@ footer .wrap { padding-block: 24px 36px; border-top: 1px solid #2B3A5E; display:
   <section id="about">
     <div class="wrap about">
       <div class="card-id">
+        <div class="photo">
+          <img src="assets/profile-photo.webp" alt="세무사 유미옥" width="540" height="781" loading="lazy">
+        </div>
         <div class="title">옥택스 대표 세무사</div>
         <div class="name">유미옥</div>
         <dl class="cred">
@@ -221,6 +232,14 @@ footer .wrap { padding-block: 24px 36px; border-top: 1px solid #2B3A5E; display:
           <div><span>학위</span><span>Ph.D. in Taxation</span></div>
           <div><span>분야</span><span>부동산 · 금융자산 · 상속증여</span></div>
         </dl>
+        <div class="career">
+          <div class="career-label">경력</div>
+          <ul>
+            <li><span class="was">前)</span> 서울지방국세청 성동세무서 국세심사위원 <span class="yr">2019–2021</span></li>
+            <li><span class="was">前)</span> 순천향대학교 회계학과 겸임교수 <span class="yr">2023–2026</span></li>
+            <li><span class="was">前)</span> 홍익대학교 경영학과 출강 <span class="yr">2022–2024</span></li>
+          </ul>
+        </div>
       </div>
       <div class="about-text">
         <div class="sec-head">
