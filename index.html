@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>옥택스 | 세무사 유미옥</title>
+<meta name="description" content="투자의 완성은 세후수익률. 부동산·금융자산 세금을 한 곳에서, 세무사 유미옥(Ph.D. in Taxation).">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="옥택스">
+<meta property="og:title" content="옥택스 | 그래서, 세금 내고 얼마 남아요?">
+<meta property="og:description" content="부동산·금융자산 세금 전략, 세무사 유미옥 | Ph.D. in Taxation">
+<meta property="og:image" content="https://miokryu.github.io/oktax/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://miokryu.github.io/oktax/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<style>
+/* Layout: navy hero band with the brand's one question, then calm cream sections that read like a tax memo. Single brand look in both themes. */
+:root {
+  --navy: #14213D;
+  --navy-2: #1E2E52;
+  --gold: #E8C77A;
+  --gold-deep: #8A6418;
+  --cream: #F6F2E8;
+  --paper: #FFFFFF;
+  --ink: #14213D;
+  --muted: #4A5672;
+  --line: #E4DCC8;
+  --on-navy-muted: #C9D3E6;
+  --display: 'Nanum Myeongjo', 'Noto Serif KR', serif;
+  --body: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--navy);
+}
+.wrap {
+  max-width: 1040px; margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+/* Hero */
+.hero { background: var(--navy); color: #fff; }
+.hero .wrap { padding-block: 28px 72px; display: flex; flex-direction: column; gap: 56px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.mark { width: 40px; height: 40px; border-radius: 50%; background: var(--gold); display: grid; place-items: center; flex-shrink: 0; }
+.brand-name { font-family: var(--display); font-weight: 800; font-size: 26px; letter-spacing: -0.5px; }
+.brand-sub { font-size: 14px; color: var(--on-navy-muted); margin-left: auto; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: end; }
+.eyebrow { font-size: 14px; font-weight: 700; letter-spacing: 0.08em; color: var(--gold); margin: 0 0 16px; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(36px, 6vw, 60px); line-height: 1.25; letter-spacing: -1px; margin: 0 0 20px; text-wrap: balance; }
+.lead { font-size: 19px; color: var(--on-navy-muted); margin: 0 0 32px; max-width: 30em; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; font-weight: 700; font-size: 16px; text-decoration: none; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: #F0D592; }
+.btn-ghost { border: 1.5px solid #46557A; color: #fff; }
+.btn-ghost:hover { border-color: var(--gold); }
+.formula { border: 1px solid #34436A; border-radius: 20px; padding: 24px 26px; background: var(--navy-2); }
+.formula-label { font-family: var(--display); font-size: 22px; font-weight: 800; letter-spacing: -0.3px; line-height: 1.4; color: var(--gold); margin-bottom: 18px; }
+.headline-sm { margin: 0; font-size: 16px; color: var(--on-navy-muted); }
+.headline-big { margin: 2px 0 0; font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1.2; color: #fff; }
+.headline-big strong { font-size: 64px; color: var(--gold); letter-spacing: -2px; margin-left: 4px; }
+.headline-sub { margin: 6px 0 20px; font-size: 16px; font-weight: 700; color: #fff; }
+.earned { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; color: var(--on-navy-muted); font-size: 15px; }
+.earned b { font-family: var(--display); font-size: 26px; color: #fff; font-weight: 800; }
+.bar { display: flex; height: 22px; border-radius: 999px; overflow: hidden; background: var(--navy); }
+.seg-tax { background: #6B7894; }
+.seg-net { background: var(--gold); }
+.legend { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-top: 12px; font-size: 15px; color: var(--on-navy-muted); }
+.legend b { color: #fff; font-weight: 800; margin-left: 4px; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.dot-tax { background: #6B7894; }
+.dot-net { background: var(--gold); }
+.formula-big { font-family: var(--display); font-size: 21px; font-weight: 800; line-height: 1.5; margin: 22px 0 0; color: #fff; }
+.formula-big em { font-style: normal; color: var(--gold); }
+.formula-eq { font-family: var(--display); font-size: 21px; line-height: 1.5; display: flex; align-items: center; gap: 14px; }
+.formula-eq .eq { flex-shrink: 0; font-size: 26px; color: var(--gold); }
+.formula-eq .frac { flex: 1; min-width: 0; display: flex; flex-direction: column; text-align: center; }
+.formula-eq .num { padding: 0 4px 8px; border-bottom: 1.5px solid var(--on-navy-muted); }
+.formula-eq .num b { color: var(--gold); font-weight: 800; }
+.formula-eq .den { padding-top: 8px; }
+.formula-note { font-family: var(--body); font-size: 14px; color: var(--on-navy-muted); margin: 16px 0 0; }
+
+/* Sections */
+section { padding-block: 72px; }
+section + section { border-top: 1px solid var(--line); }
+.sec-head { display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; max-width: 40em; }
+.sec-kicker { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: var(--gold-deep); margin: 0; }
+h2 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 4vw, 38px); line-height: 1.3; margin: 0; letter-spacing: -0.5px; text-wrap: balance; }
+.sec-desc { color: var(--muted); margin: 0; }
+
+/* About */
+.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 48px; align-items: start; }
+.card-id { background: var(--navy); color: #fff; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 18px; }
+.card-id .name { font-family: var(--display); font-size: 34px; font-weight: 800; line-height: 1.2; }
+.card-id .title { color: var(--on-navy-muted); font-size: 15px; }
+.cred { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #34436A; padding-top: 18px; }
+.cred div { display: flex; justify-content: space-between; gap: 16px; font-size: 15px; }
+.cred dt, .cred span:first-child { color: var(--on-navy-muted); }
+.cred span:last-child { font-weight: 700; text-align: right; }
+.about-text p { margin: 0 0 16px; max-width: 34em; }
+.about-text p:last-child { margin-bottom: 0; }
+.about-text strong { color: var(--ink); }
+
+/* Areas */
+.areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.area { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+.area h3 { font-size: 21px; font-weight: 800; margin: 0; }
+.area p { margin: 0; color: var(--muted); font-size: 16px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+.tag { font-size: 14px; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: var(--cream); color: var(--ink); }
+
+/* Process */
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.step { position: relative; padding: 28px 28px 28px; border-radius: 20px; background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.step::before { counter-increment: step; content: counter(step); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--navy); color: var(--gold); font-weight: 800; font-size: 16px; }
+.step h3 { margin: 0; font-size: 20px; font-weight: 800; }
+.step p { margin: 0; color: var(--muted); font-size: 16px; }
+.step .price { margin-top: auto; padding-top: 8px; font-size: 14px; font-weight: 800; color: var(--gold-deep); }
+.notice { margin-top: 24px; font-size: 15px; color: var(--muted); }
+
+/* Contact */
+.contact { background: var(--navy); color: #fff; border-top: none; }
+.contact .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+.contact h2 { color: #fff; }
+.contact .sec-kicker { color: var(--gold); }
+.contact p { color: var(--on-navy-muted); margin: 12px 0 0; }
+.contact-box { display: flex; flex-direction: column; gap: 12px; }
+.link-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 22px; border-radius: 16px; background: var(--navy-2); border: 1px solid #34436A; text-decoration: none; }
+.link-row:hover { border-color: var(--gold); }
+.link-row .k { font-size: 13px; color: var(--on-navy-muted); }
+.link-row .v { font-weight: 700; font-size: 17px; overflow-wrap: anywhere; }
+
+footer { background: var(--navy); color: var(--on-navy-muted); font-size: 14px; }
+footer .wrap { padding-block: 24px 36px; border-top: 1px solid #2B3A5E; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+@media (max-width: 820px) {
+  .hero-grid, .about, .contact .wrap { grid-template-columns: minmax(0, 1fr); }
+  .areas, .steps { grid-template-columns: minmax(0, 1fr); }
+  .brand-sub { display: none; }
+  section { padding-block: 56px; }
+  .hero .wrap { gap: 40px; padding-bottom: 56px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
+      <span class="brand-name">옥택스</span>
+      <span class="brand-sub">세무사 유미옥 · Ph.D. in Taxation</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">부동산 · 금융자산 세금 전략</p>
+        <h1>그래서, 세금 내고<br>얼마 남아요?</h1>
+        <p class="lead">투자의 완성은 세후수익률입니다. 집을 팔 때도, 코인을 정리할 때도, 자녀에게 넘길 때도 세금까지 계산해야 진짜 남는 돈이 보입니다.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://pf.kakao.com/_GWFNX/chat" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+            카카오톡 상담
+          </a>
+          <a class="btn btn-ghost" href="https://blog.naver.com/miiokryu" target="_blank" rel="noopener">블로그 보기</a>
+        </div>
+      </div>
+
+      <div class="formula">
+        <div class="formula-label">수익률과 세후수익률의 차이</div>
+        <p class="headline-sm">33억에 팔아서 번 돈 27억 중</p>
+        <p class="headline-big">남는 돈은 <strong>18억</strong></p>
+        <p class="headline-sub">세금으로만 약 8.9억이 나갑니다</p>
+        <div class="bar" role="img" aria-label="번 돈 약 27억 원 중 세금 약 8.9억 원, 남는 돈 약 18억 원">
+          <div class="seg seg-tax" style="width: 33%"></div>
+          <div class="seg seg-net" style="width: 67%"></div>
+        </div>
+        <div class="legend">
+          <div><span class="dot dot-tax"></span>세금 <b>약 8.9억</b></div>
+          <div><span class="dot dot-net"></span>실제 남는 돈 <b>약 18억</b></div>
+        </div>
+        <p class="formula-big">수익률은 <em>번 돈</em>을,<br>세후수익률은 <em>남는 돈</em>을 봅니다.</p>
+        <p class="formula-note">예시: 2002년 2억 원에 산 재건축 아파트를 2026년 33억 원에 양도한 경우 (2주택, 지방소득세 포함, 실제 사례의 금액·시점을 바꾼 예시)</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap about">
+      <div class="card-id">
+        <div class="title">옥택스 대표 세무사</div>
+        <div class="name">유미옥</div>
+        <dl class="cred">
+          <div><span>자격</span><span>세무사</span></div>
+          <div><span>학위</span><span>Ph.D. in Taxation</span></div>
+          <div><span>분야</span><span>부동산 · 금융자산 · 상속증여</span></div>
+        </dl>
+      </div>
+      <div class="about-text">
+        <div class="sec-head">
+          <p class="sec-kicker">ABOUT</p>
+          <h2>자산 전체를 놓고 세금을 봅니다</h2>
+        </div>
+        <p>아파트 한 채를 팔 때의 양도세는 세대가 가진 다른 주택과 파는 순서에 따라 달라집니다. 그리고 판 돈을 자녀에게 넘기거나, 코인 수익으로 집을 살 때는 증여세와 자금출처까지 이어집니다. 한 번의 거래만 따로 보면 다음 단계에서 예상하지 못한 세금을 만나기 쉽습니다.</p>
+        <p>옥택스는 <strong>부동산과 금융자산을 한 장의 그림으로 놓고</strong>, 언제 무엇을 어떤 순서로 처리할지 함께 설계합니다. 같은 조문도 해석과 판례에 따라 결과가 달라지기에, 근거부터 확인하고 말씀드립니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">SERVICES</p>
+        <h2>전문 분야</h2>
+        <p class="sec-desc">자산의 종류보다, 그 자산을 언제 어떻게 정리하느냐가 세금을 결정합니다.</p>
+      </div>
+      <div class="areas">
+        <article class="area">
+          <h3>부동산</h3>
+          <p>재건축 아파트처럼 계산 방식이 다른 경우, 다주택과 일시적 2주택처럼 순서가 중요한 경우를 정확히 짚습니다.</p>
+          <div class="tags"><span class="tag">양도소득세</span><span class="tag">재건축·입주권</span><span class="tag">보유세</span></div>
+        </article>
+        <article class="area">
+          <h3>금융자산</h3>
+          <p>2027년 시행 예정인 가상자산 과세부터 해외주식, 금융소득 종합과세까지 투자 소득의 세금을 정리합니다.</p>
+          <div class="tags"><span class="tag">가상자산</span><span class="tag">해외주식</span><span class="tag">금융소득</span></div>
+        </article>
+        <article class="area">
+          <h3>자산 이전</h3>
+          <p>자녀에게 넘길 자산을 언제, 무엇부터, 어떤 방식으로 넘길지 상속과 증여를 함께 놓고 비교합니다.</p>
+          <div class="tags"><span class="tag">증여세</span><span class="tag">상속세</span><span class="tag">자금출처</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">PROCESS</p>
+        <h2>상담은 이렇게 진행돼요</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <h3>카카오톡 문의</h3>
+          <p>어떤 자산과 관련해 무엇이 궁금한지 남겨주세요. 핵심 쟁점과 방향을 먼저 안내드립니다.</p>
+          <span class="price">무료</span>
+        </li>
+        <li class="step">
+          <h3>유료 상담</h3>
+          <p>취득·양도 서류를 검토해 실제 세액을 계산하고, 매도 시점이나 순서에 따른 절세 방안을 비교해 드립니다.</p>
+          <span class="price">상담료는 문의 시 안내</span>
+        </li>
+        <li class="step">
+          <h3>신고 진행</h3>
+          <p>상담 결과를 바탕으로 신고와 납부까지 맡아 처리합니다.</p>
+          <span class="price">의뢰 시 상담료 차감</span>
+        </li>
+      </ol>
+      <p class="notice">서류 확인 없이 안내드린 금액은 실제와 크게 다를 수 있어, 세액 계산은 유료 상담에서만 진행합니다.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div>
+        <p class="sec-kicker">CONTACT</p>
+        <h2>팔기 전에, 넘기기 전에<br>먼저 물어보세요</h2>
+        <p>계약 전에 확인하면 바꿀 수 있는 것이 훨씬 많습니다.</p>
+      </div>
+      <div class="contact-box">
+        <a class="link-row" href="https://pf.kakao.com/_GWFNX/chat" target="_blank" rel="noopener">
+          <div><div class="k">카카오톡 상담 · 평일 10:00–18:00</div><div class="v">옥택스 채널로 문의하기</div></div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8C77A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="link-row" href="https://blog.naver.com/miiokryu" target="_blank" rel="noopener">
+          <div><div class="k">네이버 블로그</div><div class="v">옥택스 | 그래서, 세금 내고 얼마 남아요?</div></div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8C77A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>옥택스 · 세무사 유미옥 | Ph.D. in Taxation</span>
+    <span>이 페이지의 내용은 일반 안내이며, 개별 사안은 전문가 검토가 필요합니다.</span>
+  </div>
+</footer>
+
+</body>
+</html>
