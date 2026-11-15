@@ -110,7 +110,7 @@ h2 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 4vw, 
 .sec-desc { color: var(--muted); margin: 0; }
 
 /* About */
-.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 48px; align-items: start; }
+.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 56px; align-items: center; }
 .card-id { background: var(--navy); color: #fff; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 18px; }
 .card-id .name { font-family: var(--display); font-size: 34px; font-weight: 800; line-height: 1.2; }
 .card-id .title { color: var(--on-navy-muted); font-size: 15px; }
@@ -118,14 +118,15 @@ h2 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 4vw, 
 .cred div { display: flex; justify-content: space-between; gap: 16px; font-size: 15px; }
 .cred dt, .cred span:first-child { color: var(--on-navy-muted); }
 .cred span:last-child { font-weight: 700; text-align: right; }
-.card-id .photo { position: relative; height: 300px; margin: -8px -8px 4px; border-radius: 18px; overflow: hidden; background: radial-gradient(circle at 50% 62%, #E8C77A 0 118px, transparent 119px), #1E2E52; display: flex; justify-content: center; align-items: flex-end; }
-.card-id .photo img { width: 250px; height: auto; display: block; margin-bottom: -100px; }
-.career { border-top: 1px solid #34436A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px; }
-.career-label { font-size: 15px; color: var(--on-navy-muted); }
-.career ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.career li { font-size: 15px; font-weight: 700; line-height: 1.5; }
-.career .was { color: var(--gold); font-weight: 800; margin-right: 2px; }
-.career .yr { display: block; font-weight: 500; font-size: 13px; color: var(--on-navy-muted); }
+.card-id .photo { position: relative; height: 300px; margin: -8px -8px 4px; border-radius: 18px; overflow: hidden; background: radial-gradient(circle at 50% 60%, #E8C77A 0 122px, transparent 123px), #1E2E52; display: flex; justify-content: center; align-items: flex-end; }
+.card-id .photo img { width: 250px; height: auto; display: block; margin-bottom: -100px; transform: translateX(-14px); }
+.career { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 22px; display: flex; flex-direction: column; gap: 12px; max-width: 34em; }
+.career-label { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: var(--gold-deep); }
+.career ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+.career li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 16px; font-weight: 700; line-height: 1.5; }
+.career li .was { flex-shrink: 0; }
+.career .was { color: var(--gold-deep); font-weight: 800; margin-right: 6px; }
+.career .yr { margin-left: auto; flex-shrink: 0; font-weight: 500; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .about-text p { margin: 0 0 16px; max-width: 34em; }
 .about-text p:last-child { margin-bottom: 0; }
 .about-text strong { color: var(--ink); }
@@ -232,14 +233,6 @@ footer .wrap { padding-block: 24px 36px; border-top: 1px solid #2B3A5E; display:
           <div><span>학위</span><span>Ph.D. in Taxation</span></div>
           <div><span>분야</span><span>부동산 · 금융자산 · 상속증여</span></div>
         </dl>
-        <div class="career">
-          <div class="career-label">경력</div>
-          <ul>
-            <li><span class="was">前)</span> 서울지방국세청 성동세무서 국세심사위원 <span class="yr">2019–2021</span></li>
-            <li><span class="was">前)</span> 순천향대학교 회계학과 겸임교수 <span class="yr">2023–2026</span></li>
-            <li><span class="was">前)</span> 홍익대학교 경영학과 출강 <span class="yr">2022–2024</span></li>
-          </ul>
-        </div>
       </div>
       <div class="about-text">
         <div class="sec-head">
@@ -248,6 +241,14 @@ footer .wrap { padding-block: 24px 36px; border-top: 1px solid #2B3A5E; display:
         </div>
         <p>아파트 한 채를 팔 때의 양도세는 세대가 가진 다른 주택과 파는 순서에 따라 달라집니다. 그리고 판 돈을 자녀에게 넘기거나, 코인 수익으로 집을 살 때는 증여세와 자금출처까지 이어집니다. 한 번의 거래만 따로 보면 다음 단계에서 예상하지 못한 세금을 만나기 쉽습니다.</p>
         <p>옥택스는 <strong>부동산과 금융자산을 한 장의 그림으로 놓고</strong>, 언제 무엇을 어떤 순서로 처리할지 함께 설계합니다. 같은 조문도 해석과 판례에 따라 결과가 달라지기에, 근거부터 확인하고 말씀드립니다.</p>
+        <div class="career">
+          <div class="career-label">경력</div>
+          <ul>
+            <li><span class="was">前)</span> 서울지방국세청 성동세무서 국세심사위원 <span class="yr">2019–2021</span></li>
+            <li><span class="was">前)</span> 순천향대학교 회계학과 겸임교수 <span class="yr">2023–2026</span></li>
+            <li><span class="was">前)</span> 홍익대학교 경영학과 출강 <span class="yr">2022–2024</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
